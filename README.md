@@ -1,6 +1,6 @@
 # Goat_Studios
 
-Tienda web de ropa full stack con envíos a toda Colombia. Incluye catálogo de productos, carrito de compras, panel de administración con CRUD, autenticación de usuarios y arquitectura por microservicios.
+Tienda web de ropa full stack. Incluye catálogo de productos, carrito de compras, panel de administración con CRUD, autenticación de usuarios y arquitectura por microservicios.
 
 ## Vista previa
 
