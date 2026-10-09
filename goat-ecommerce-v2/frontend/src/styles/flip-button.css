@@ -1,0 +1,97 @@
+.flip-button {
+  position: relative;
+  display: inline-block;
+  min-width: 130px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  perspective: 700px;
+  font: inherit;
+}
+
+.flip-button-inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.flip-button:not(:disabled):hover .flip-button-inner,
+.flip-button:not(:disabled):focus-visible .flip-button-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-button-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid currentColor;
+  border-radius: 7px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.flip-button-front {
+  transform: rotateX(0deg);
+}
+
+.flip-button-back {
+  transform: rotateX(180deg);
+  background: #d4c29a;
+  border-color: #d4c29a;
+  color: #0a0a0a;
+}
+
+.flip-button-default .flip-button-front {
+  background: #f0ece6;
+  color: #0a0a0a;
+  border-color: #f0ece6;
+}
+
+.flip-button-outline .flip-button-front {
+  background: transparent;
+  color: #f0ece6;
+  border-color: #3a3a3a;
+}
+
+.flip-button-gold .flip-button-front {
+  background: transparent;
+  color: #d4c29a;
+  border-color: rgba(212, 194, 154, 0.45);
+}
+
+.flip-button-small {
+  min-width: 112px;
+  height: 34px;
+}
+
+.flip-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip-button-inner {
+    transition: none;
+  }
+
+  .flip-button:not(:disabled):hover .flip-button-inner,
+  .flip-button:not(:disabled):focus-visible .flip-button-inner {
+    transform: none;
+  }
+
+  .flip-button:focus-visible .flip-button-back {
+    opacity: 1;
+  }
+}
