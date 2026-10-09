@@ -7,11 +7,7 @@ Tienda web de ropa full stack con envíos a toda Colombia. Incluye catálogo de 
 ### Home
 <img width="1535" height="702" alt="image" src="https://github.com/user-attachments/assets/40e9ce1c-a210-4f9a-9b1e-37b01b758811" />
 
-
-### Tienda y tarjetas de producto
-![Tienda](./docs/tienda.png)
-
-### DePerfil del Ususrio
+### Perfil del Ususrio
 <img width="1535" height="697" alt="image" src="https://github.com/user-attachments/assets/aeb1a762-f01f-43b8-91fd-7cbf3fe8e8cc" />
 
 ### Prendas Futuras
